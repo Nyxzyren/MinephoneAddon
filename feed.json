@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "announcements": [
+    { "id": "welcome-1", "title": "Welcome", "text": "Your GitHub feed is connected." }
+  ],
+  "apps": [
+    {
+      "id": "guide",
+      "name": "Guide",
+      "color": "#3B82F6",
+      "home": "main",
+      "screens": {
+        "main": {
+          "title": "Server Guide",
+          "elements": [
+            { "type": "heading", "text": "Welcome, explorer" },
+            { "type": "text", "text": "You are at {player.x}, {player.y}, {player.z} in {world.dimension}." },
+            { "type": "text", "text": "Health {player.health}/{player.maxHealth}, day {world.day}, {world.weather}." },
+            { "type": "divider" },
+            { "type": "button", "label": "Go to spawn", "color": "#2E9E6B",
+              "action": { "type": "navigate", "name": "Spawn", "x": 0, "y": 64, "z": 0 } },
+            { "type": "button", "label": "Starter quest",
+              "action": { "type": "quest", "title": "Build a base", "category": "Building",
+                          "subtasks": ["Gather wood", "Gather stone", "Craft a bed", "Build shelter"] } },
+            { "type": "button", "label": "Rules", "action": { "type": "screen", "id": "rules" } },
+            { "type": "button", "label": "Open Quests", "color": "#E8A33D",
+              "action": { "type": "openApp", "id": "mpapp_quests" } }
+          ]
+        },
+        "rules": {
+          "title": "Rules",
+          "elements": [
+            { "type": "list", "items": [
+              { "title": "Be kind", "subtitle": "No griefing or harassment" },
+              { "title": "Spawn", "subtitle": "Tap to navigate",
+                "action": { "type": "navigate", "name": "Spawn", "x": 0, "y": 64, "z": 0 } }
+            ] },
+            { "type": "button", "label": "Back", "action": { "type": "back" } }
+          ]
+        }
+      }
+    }
+  ]
+}
