@@ -1,7 +1,7 @@
 {
-  "version": 3,
-  "file": "core-3.jar",
-  "sha256": "bb158045e9ab8229dc54669783bca04b6baf0f1c29611bb5fb6afd313d0b915f",
-  "signature": "BBbKAdQRdmoX+8F1UDip7nnrkwPYKB0H/srntPgspkJAKA0nQ3XGCoMk4nodX9PmYFElrpplM0gqUpO8oDT4CA==",
+  "version": 4,
+  "file": "core-4.jar",
+  "sha256": "29be3961e71ce074bb741272f6e46f6f415ae0b12902c72bde46913eca6c9617",
+  "signature": "cZRdlrsBwNwIFv1rk6sLJuC3juaIoHh3n56MrR4Y8vCeY24sjK4SWYV6dmx/PoP6I+6t2XlIM2p4M9J/j9iHDw==",
   "loaderApi": 1
 }
